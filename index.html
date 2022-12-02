@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -60,7 +61,7 @@
             </div>
         </div>
     </nav>
->
+    >
 
     <!-------------------- Navbar Ends ---------------------->
 
@@ -69,12 +70,12 @@
             <img src="Assets/Mobile login.gif" alt="Error">
         </div>
 
-        <div class="right mt-5" style="width:fit-content; width: 16rem; ">
+        <div class="right mt-5" style="width: 16rem; margin-left: 3rem; ">
             <div class="user-info"
                 style="border: solid 1px grey; border-radius: 0.6rem; padding: 1rem; background-color: #e5eef7;">
                 <h1 class="d-flex justify-content-center">Sociout</h1>
-                <input type="text" name="firstname" class="firstname mt-3 p-2" id="firstName" placeholder="Enter firstname"
-                    required>
+                <input type="text" name="firstname" class="firstname mt-3 p-2" id="firstName"
+                    placeholder="Enter firstname" required>
                 <input type="text" name="lastname" class="lastname mt-3 p-2" id="lastName" placeholder="Enter lastname"
                     required>
                 <input type="email" name="email" class="username mt-3 p-2" id="email" placeholder="Enter email"
@@ -97,8 +98,8 @@
 
     <!------------------ Responsive CSS ---------------->
     <style>
-        @media screen and (max-width:900px)  {
-            .login-whole{
+        @media screen and (max-width:1000px) {
+            .login-whole {
                 display: flex !important;
                 flex-direction: column !important;
                 justify-content: center !important;
@@ -106,16 +107,25 @@
                 margin-right: auto !important;
                 margin-bottom: 20px;
             }
-            .left img{
+
+            .left img {
                 height: 25rem;
                 width: 25rem;
             }
         }
+
+        @media screen and (max-width:600px){
+            .right input{
+                max-width: 14rem;
+            }
+        }
+
     </style>
 
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./newUsers.js" type="module"></script>
 
-    </body>
-    </html>
+</body>
+
+</html>
