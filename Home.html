@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociout</title>
+
+    <!----------  Iconscout Cdn link -------------->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!----------  Font Awesome Cdn link -------------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!----------------- Bootstrap Css link  ------------------>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!------------- Stylesheet ------------------>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="onloading()">
+
+    <!----------------------------- Preloader for profile pic ----------------------->
+    <div class="uploader">
+        <div class="loader">Uploading Image...</div>
+    </div>
+
+    <!--------------------------- Preloader for full website ---------------------------->
+    <div class="preloader">
+        <div class="no-freeze-spinner">
+            <div id="no-freeze-spinner">
+                <div>
+                    <i class="material-icons">account_circle</i>
+                    <i class="material-icons">home</i>
+                    <i class="material-icons">message</i>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------ Navbar Start ------------------------------->
+
+    <nav class="navbar" style="background: #343a40;">
+        <div class="nav-items d-flex justify-content-space-between align-items-center">
+            <h1 class="heading text-light mt-2 fs-3">Sociout</h1>
+
+            <div class="search-bar ms-5 fs-6">
+                <input class="search fs-6" style="padding: 5px;" type="search" placeholder="Search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass text-light fs-6"></i>
+            </div>
+
+            <div class="d-flex text-align-center">
+                <div class="menu-item ms-4" onclick="window.location.href='Home.html';">
+                    <span><i class="fa-solid fa-house text-light ms-3 fs-6"></i></span>
+                </div>
+                <div class="menu-item ms-4" onclick="window.location.href='Explore.html';">
+                    <span><i class="fa-solid fa-square-plus text-light ms-3 fs-6"></i></span>
+                </div>
+                <div class="menu-item ms-4" onclick="window.location.href='Notification.html';">
+                    <span><i class="fa-solid fa-bell ms-3 text-light fs-6"></i></span>
+                </div>
+                <!-- <div class="menu-item ms-4" onclick="window.location.href='Messages.html';">
+                    <span><i class="fa-brands fa-facebook-messenger ms-3 text-light fs-6"></i></span>
+                </div> -->
+                <div class="menu-item ms-4" onclick="window.location.href='index.html';">
+                    <span><i class="fa-solid fa-user text-light ms-3 fs-6"></i></span>
+                </div>
+                <div class="menu-item ms-4" onclick="window.location.href='login.html';">
+                    <span><i class="fa-solid fa-power-off text-light ms-3 fs-6"></i></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------- Navbar Ends -------------------------------->
+
+
+    <!--------------------------- Main Section Start------------------------------->
+
+    <div class="whole d-flex">
+        <section class="main-section mb-3">
+
+            <!-- ---------------------------- Scroll Start ----------------------------->
+            <div class="scroll ">
+
+                <!------------------------------- Stories ------------------------------>
+
+                <div class="all-story mt-3 ms-3 mb-2">
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic1.png">
+                        </div>
+                        <p class="name ms-2 ">Your story</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Paridhi Singh</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Trisha Jain</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Palak Muchchal</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Aryan Agrawal</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic3.png">
+                        </div>
+                        <p class="name">Arun Sharma</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-2">
+                            <img src="Assets/profile-pic-girl1.png">
+                        </div>
+                        <p class="name">Sneha Mittal</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3 me-3">
+                            <img src="Assets/profile-pic2.png">
+                        </div>
+                        <p class="name">Varun Singh</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Anurag Patidar</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Tanmay Bhatt</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Sumit Rao</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl3.png">
+                        </div>
+                        <p class="name ms-2">Arnav Gour</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic3.png">
+                        </div>
+                        <p class="name">Karan Varma</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3">
+                            <img src="Assets/profile-pic-girl1.png">
+                        </div>
+                        <p class="name">Karuna Rai</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3 me-3">
+                            <img src="Assets/profile-pic2.png">
+                        </div>
+                        <p class="name">Mahak Singh</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3 me-3">
+                            <img src="Assets/profile-pic2.png">
+                        </div>
+                        <p class="name">Mahak Singh</p>
+                    </div>
+
+                    <div class="story">
+                        <div class="story-profile-photo mt-2 ms-3 me-3">
+                            <img src="Assets/profile-pic2.png">
+                        </div>
+                        <p class="name">Mahak Singh</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----------------------- End of Story & Scroll -------------------------->
+
+
+            <!-- ----------------------- Start of Feed & Scroll------------------------------>
+            <div class="scroll  mt-3">
+
+                <!------------------------------- Feed 1 ---------------------------------->
+                <div class="feed-whole">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo ms-3 mt-3">
+                                <img src="Assets/profile-pic-girl3.png" alt="Error">
+                            </div>
+                            <div class="info ms-2 ">
+                                <h5>Priti Chopra</h5>
+                            </div>
+                        </div>
+                        <span class="edit mt-4 me-2">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="feed-photo ms-2 me-2 mt-2 mb-2">
+                        <img src="Assets/e2.jpg" alt="error" style="width:70%; height:70%;">
+                    </div>
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="fa fa-heart heart"></i></span>
+                            <span><i class="uil uil-comment" onclick="window.location.href='Comment1.html';"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+
+                        <div class="bookmark">
+                            <i class="fa fa-bookmark bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <p class="ms-3">2416 likes</p>
+                    </div>
+
+                    <div class="caption">
+                        <p class="ms-3">New technology ui/ux design Lorem ipsum dolor sit adipisicing elit.<span
+                                class="harsh-tag">#developer</span></p>
+                    </div>
+
+                    <div class="comments text-secondary ms-3">View all 277 commments.</div>
+                    <p class="text-secondary ms-3">13 hours ago</p>
+                </div>
+
+
+                <!------------------------------- Feed 2 ------------------------------>
+                <div class="feed-whole">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo ms-3 mt-3">
+                                <img src="Assets/profile-pic-girl3.png" alt="Error">
+                            </div>
+                            <div class="info ms-2 ">
+                                <h5>Priti Chopra</h5>
+                            </div>
+                        </div>
+                        <span class="edit mt-4 me-2">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="feed-photo ms-2 me-2 mt-2 mb-2">
+                        <img src="Assets/e5.jpg" alt="error" style="width:70%; height:70%;">
+                    </div>
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="fa fa-heart heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+
+                        <div class="bookmark">
+                            <i class="fa fa-bookmark bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <p class="ms-3">2416 likes</p>
+                    </div>
+
+                    <div class="caption">
+                        <p class="ms-3">New technology ui/ux design Lorem ipsum dolor sit adipisicing elit.<span
+                                class="harsh-tag">#developer</span></p>
+                    </div>
+
+                    <div class="comments text-secondary ms-3">View all 277 commments.</div>
+                    <p class="text-secondary ms-3">13 hours ago</p>
+                </div>
+
+
+                <!---------------------------- Feed 3 ------------------------------->
+                <div class="feed-whole">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo ms-3 mt-3">
+                                <img src="Assets/profile-pic-girl3.png" alt="Error">
+                            </div>
+                            <div class="info ms-2 ">
+                                <h5>Priti Chopra</h5>
+                            </div>
+                        </div>
+                        <span class="edit mt-4 me-2">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="feed-photo ms-2 me-2 mt-2 mb-2">
+                        <img src="Assets/e6.jpg" alt="error" style="width:70%; height:70%;">
+                    </div>
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="fa fa-heart heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+
+                        <div class="bookmark">
+                            <i class="fa fa-bookmark bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <p class="ms-3">2416 likes</p>
+                    </div>
+
+                    <div class="caption">
+                        <p class="ms-3">New technology ui/ux design Lorem ipsum dolor sit adipisicing elit.<span
+                                class="harsh-tag">#developer</span></p>
+                    </div>
+
+                    <div class="comments text-secondary ms-3">View all 277 commments.</div>
+                    <p class="text-secondary ms-3">13 hours ago</p>
+                </div>
+
+
+                <!------------------------------------ Feed 4 ------------------------->
+                <div class="feed-whole">
+                    <div class="head">
+                        <div class="user">
+                            <div class="profile-photo ms-3 mt-3">
+                                <img src="Assets/profile-pic-girl3.png" alt="Error">
+                            </div>
+                            <div class="info ms-2 ">
+                                <h5>Priti Chopra</h5>
+                            </div>
+                        </div>
+                        <span class="edit mt-4 me-2">
+                            <i class="uil uil-ellipsis-h"></i>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="feed-photo ms-2 me-2 mt-2 mb-2">
+                        <img src="Assets/e7.jpg" alt="error" style="width:70%; height:70%;">
+                    </div>
+                    <div class="action-buttons">
+                        <div class="interaction-buttons">
+                            <span><i class="fa fa-heart heart"></i></span>
+                            <span><i class="uil uil-comment"></i></span>
+                            <span><i class="uil uil-share-alt"></i></span>
+                        </div>
+
+                        <div class="bookmark">
+                            <i class="fa fa-bookmark bookmark"></i>
+                        </div>
+                    </div>
+
+                    <div class="liked-by">
+                        <p class="ms-3">2416 likes</p>
+                    </div>
+
+                    <div class="caption">
+                        <p class="ms-3">New technology ui/ux design Lorem ipsum dolor sit adipisicing elit.<span
+                                class="harsh-tag">#developer</span></p>
+                    </div>
+
+                    <div class="comments text-secondary ms-3">View all 277 commments.</div>
+                    <p class="text-secondary ms-3">13 hours ago</p>
+                </div>
+            </div>
+
+        <!-- ----------- End of Feed,Scroll, Main Section----------------->
+        </section>
+
+
+        <!-- ---------------------------- Side Bar Start --------------------------------->
+        <section class="side-bar">
+            <div class="side-profile">
+                <div class="head">
+                    <div class="user">
+                        <div class="profile-photo ms-2 mt-3">
+                            <!-- <img src="Assets/profile-pic-girl3.png" alt="Error"> -->
+                            <input type="file" accept="image/*" class="user-img" />
+                        </div>
+                        <div class="info ms-1 me-2">
+                            <h5 id="userName">Priti Chopra</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-secondary ms-2 mt-2">Suggestions For You</p>
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo ms-1 mt-2">
+                        <img src="Assets/profile-pic-girl3.png" alt="Error" style="height: 30px; width:30px;">
+                    </div>
+                    <div class="info info-sidebar mt-2  me-2">
+                        <p>Priti Chopra</p>
+                    </div>
+                    <div class="follow-btn me-2 mt-2">
+                        <button class="text-primary follow">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo ms-1 mt-2">
+                        <img src="Assets/profile-pic-girl3.png" alt="Error" style="height: 30px; width:30px;">
+                    </div>
+                    <div class="info info-sidebar mt-2  me-2">
+                        <p>Priti Chopra</p>
+                    </div>
+                    <div class="follow-btn me-2 mt-2">
+                        <button class="text-primary follow">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo ms-1 mt-2">
+                        <img src="Assets/profile-pic-girl3.png" alt="Error" style="height: 30px; width:30px;">
+                    </div>
+                    <div class="info info-sidebar mt-2  me-2">
+                        <p>Priti Chopra</p>
+                    </div>
+                    <div class="follow-btn me-2 mt-2">
+                        <button class="text-primary follow">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo ms-1 mt-2">
+                        <img src="Assets/profile-pic-girl3.png" alt="Error" style="height: 30px; width:30px;">
+                    </div>
+                    <div class="info info-sidebar mt-2  me-2">
+                        <p>Priti Chopra</p>
+                    </div>
+                    <div class="follow-btn me-2 mt-2">
+                        <button class="text-primary follow">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="head">
+                <div class="user">
+                    <div class="profile-photo ms-1 mt-2">
+                        <img src="Assets/profile-pic-girl3.png" alt="Error" style="height: 30px; width:30px;">
+                    </div>
+                    <div class="info info-sidebar mt-2  me-2">
+                        <p>Priti Chopra</p>
+                    </div>
+                    <div class="follow-btn me-2 mt-2">
+                        <button class="text-primary follow">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="text-secondary ms-2">Sociout <i class="fa-solid fa-copyright"></i> 2022</p>
+            </div>
+        </section>
+    </div>
+
+    <!----------------------- CSS -------------------------->
+
+    <style>
+        /* ------------------ Image uploader Css ------------------- */
+
+        :root {
+            --bg: #1c1717;
+        }
+
+        .uploader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            z-index: 4;
+            background: black;
+            display: none;
+        }
+
+        @property --a {
+            initial-value: 0deg;
+            inherits: false;
+            syntax: '<angle>';
+        }
+
+        @property --h {
+            initial-value: 0;
+            inherits: false;
+            syntax: '<number>';
+        }
+
+        .loader {
+            padding: 2rem 4rem;
+            font-family: monospace;
+            font-weight: bold;
+            color: #fff;
+            border-style: solid;
+            border-width: 1vmin;
+            font-size: 2rem;
+            --charge: hsl(var(--h, 0), 80%, 50%);
+            -o-border-image: conic-gradient(var(--charge) var(--a), transparent calc(var(--a) + 0.5deg)) 30;
+            border-image: conic-gradient(var(--charge) var(--a), transparent calc(var(--a) + 0.5deg)) 30;
+            -webkit-animation: load 2s infinite ease-in-out;
+            animation: load 2s infinite ease-in-out;
+        }
+
+        @-webkit-keyframes load {
+
+            0%,10% {
+                --a: 0deg;
+                --h: 0;
+            }
+
+            100% {
+                --a: 360deg;
+                --h: 100;
+            }
+        }
+
+        @keyframes load {
+
+            0%,10% {
+                --a: 0deg;
+                --h: 0;
+            }
+
+            100% {
+                --a: 360deg;
+                --h: 100;
+            }
+        }
+
+    /* ------------------ User Profile Pic ---------------------------------- */
+        .user-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: wheat;
+            padding: 70px 0px 0px 0px;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+
+        .user-img::-webkit-file-upload-button {
+            display: none;
+        }
+
+        .user-img:hover {
+            appearance: unset;
+        }
+    </style>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+    <script src="home.js" type="module"></script>
+
+    
+    <script>
+        let preloader = document.querySelector(".preloader");
+        function onloading() {
+            setTimeout(() => {
+                preloader.style.display = "none";
+            }, 2000)
+        }
+    </script>
+
+</body>
+</html>
