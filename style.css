@@ -9,7 +9,6 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    
 }
 
 .main-section{
@@ -58,7 +57,6 @@ hr{
 .scroll{
     margin-top: 6rem;
     max-width: 38rem;
-    margin-right: 1rem;
 }
 
 .all-story{
@@ -115,7 +113,6 @@ hr{
 .feed-whole{
     margin-top: 0.5rem;
     margin-left: 1rem;
-    margin-right: 0.1rem;
     font-size: 0.85 rem;
     line-height: 1.5;
     border: solid 1px grey;
@@ -207,15 +204,16 @@ hr{
 }
 
 @media screen and (max-width:650px){
-    /* .search-bar{
+    .search-bar{
         display: none;
-    } */
+    }
     .side-bar{
         display: none;
     }
     .main-section{
         margin-left: auto;
         margin-right: auto;
+        /* padding-right: 1rem; */
     }
 }
 
@@ -224,16 +222,13 @@ hr{
 
     .preloader{
         display: flex;
-        height: 100%;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         top: 0px;
-        left: 0;
-        bottom: 0;
-        right: 0;
         z-index: 4;
         background: url("https://img.freepik.com/free-photo/perspective-exterior-nobody-empty-box_1258-260.jpg?w=1060&t=st=1669973106~exp=1669973706~hmac=cd73518cc18ed2308d4ff42c391988d984e00482136b953fa4fff8f4eca9d15e");
         background-position: center !important;
@@ -247,14 +242,12 @@ hr{
 
         #no-freeze-spinner {
             position: fixed;
-            top: 0px;
+            top: 0;
             left: 0;
-            bottom: 0;
-            right: 0;
             width: 100%;
             transition: all 0.1s linear;
             opacity: 0;
-            height: 100%;
+            height: 100vh;
             transform: scale(10);
             z-index: -1;
             background: rgba(0, 0, 0, 0.8);
@@ -262,11 +255,6 @@ hr{
         }
 
         .no-freeze-spinner #no-freeze-spinner {
-            position: fixed;
-            top: 0px;
-            left: 0;
-            bottom: 0;
-            right: 0;
             z-index: 9999;
             opacity: 0.5;
             transform: scale(1);
