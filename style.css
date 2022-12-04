@@ -222,13 +222,14 @@ hr{
 
     .preloader{
         display: flex;
-        height: 100vh;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
         position: fixed;
         top: 0px;
+        bottom: 0px;
         z-index: 4;
         background: url("https://img.freepik.com/free-photo/perspective-exterior-nobody-empty-box_1258-260.jpg?w=1060&t=st=1669973106~exp=1669973706~hmac=cd73518cc18ed2308d4ff42c391988d984e00482136b953fa4fff8f4eca9d15e");
         background-position: center !important;
@@ -258,6 +259,7 @@ hr{
             z-index: 9999;
             opacity: 0.5;
             transform: scale(1);
+            height: 100%;
         }
 
         #no-freeze-spinner>div>div {
