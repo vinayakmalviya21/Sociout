@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,13 +27,13 @@
 </head>
 
 <body onload="onloading()">
-<style>
-@media screen and (max-width:600px) {
-    body{
-        min-width: fit-content;
-    }
-}
-</style>
+    <!-- <style>
+        @media screen and (max-width:600px) {
+            body {
+                max-width: fit-content;
+            }
+        }
+    </style> -->
 
     <!----------------------------- Preloader for profile pic ----------------------->
     <div class="uploader">
@@ -47,8 +48,7 @@
                     <i class="material-icons">account_circle</i>
                     <i class="material-icons">home</i>
                     <i class="material-icons">message</i>
-                    <div>
-                    </div>
+                  
                 </div>
             </div>
         </div>
@@ -411,7 +411,7 @@
                 </div>
             </div>
 
-        <!-- ----------- End of Feed,Scroll, Main Section----------------->
+            <!-- ----------- End of Feed,Scroll, Main Section----------------->
         </section>
 
 
@@ -553,7 +553,8 @@
 
         @-webkit-keyframes load {
 
-            0%,10% {
+            0%,
+            10% {
                 --a: 0deg;
                 --h: 0;
             }
@@ -566,7 +567,8 @@
 
         @keyframes load {
 
-            0%,10% {
+            0%,
+            10% {
                 --a: 0deg;
                 --h: 0;
             }
@@ -577,7 +579,7 @@
             }
         }
 
-    /* ------------------ User Profile Pic ---------------------------------- */
+        /* ------------------ User Profile Pic ---------------------------------- */
         .user-img {
             display: flex;
             justify-content: center;
@@ -614,7 +616,7 @@
     <script src="script.js"></script>
     <script src="home.js" type="module"></script>
 
-    
+
     <script>
         let preloader = document.querySelector(".preloader");
         function onloading() {

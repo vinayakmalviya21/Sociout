@@ -213,7 +213,12 @@ hr{
     .main-section{
         margin-left: auto;
         margin-right: auto;
+        width: 100vw;
         /* padding-right: 1rem; */
+    }
+    .all-story,.feed-whole{
+        margin-left: 20px !important;
+        margin:0px 20px !important;
     }
 }
 
@@ -235,6 +240,10 @@ hr{
         background-position: center !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
+        /* position: fixed !important;
+        top: 0px !important;
+        width: 100vw !important;
+        height: 100vh !important; */
     }
 
         .no-freeze-spinner img {
