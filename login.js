@@ -68,7 +68,7 @@ function getCurrentUserInfo(getEmail) {
                             localStorage.setItem('loggedinUser', JSON.stringify(loginUser));
 
                             setTimeout(() => {
-                                document.location.href = 'Home.html';
+                                document.location.href = 'profile.html';
                             }, 1000);
                         }
                     } else {

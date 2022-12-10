@@ -35,11 +35,12 @@ function setInfo() {
         userName: fullName,
         email: userEmail,
         photo: "",
-        followers: [],
-        following: [],
-        bioData: "",
-        chats: [],
-        comments: [],
+        followers: "",
+        following: "",
+        bio: "",
+        chats: "",
+        comments: ['comment0'],
+        posts: ["post0"],
     });
 }
 

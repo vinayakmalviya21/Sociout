@@ -3,6 +3,8 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebas
 // import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 // import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js";
 
+import { ref } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-storage.js";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -20,5 +22,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+export const storageRef = ref;
 // const auth = getAuth(app);
 // const database = getDatabase(app);

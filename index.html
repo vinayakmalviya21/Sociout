@@ -26,7 +26,7 @@
 
 </head>
 
-<body onload="preloader()">
+<body>
 
     <!--------------------------- Navbar Start ------------------------------>
 
@@ -81,7 +81,10 @@
                 <input type="email" name="email" class="username mt-3 p-2" id="email" placeholder="Enter email"
                     required>
 
-                <input type="password" name="psw" class="password mt-3 p-2" id="psw" placeholder="Password" required>
+                <input type="password" name="psw" class="password mt-3 p-2 fs-6" id="psw" placeholder="Password" required>
+
+                <!-- An element to toggle between password visibility -->
+                <input type="checkbox" onclick="myFunction()" class="mt-3">Show Password
 
                 <button type="button" id="register" name="register" class="registerbtn btn mt-3"
                     style="border:solid 2px blue; background-color:rgb(228 222 228 / 85%);">Register</button>
@@ -114,17 +117,27 @@
             }
         }
 
-        @media screen and (max-width:600px){
-            .right input{
+        @media screen and (max-width:600px) {
+            .right input {
                 max-width: 14rem;
             }
         }
-
     </style>
 
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./newUsers.js" type="module"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("psw");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 
 </body>
 

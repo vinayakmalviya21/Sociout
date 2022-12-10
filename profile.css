@@ -1,0 +1,28 @@
+.addPost{
+    display: none;
+}
+
+.showsPosts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.showsPosts div{
+    border-radius: 0px !important;
+    max-height: min-content;
+}
+
+.showsPosts div img{
+    border-radius: 0px !important;
+    height: 100%;
+    width: 100%;
+}
+
+.aboutArea,.doneButton{
+    display: none;
+}
+
+.detailBio{
+    display: none;
+}

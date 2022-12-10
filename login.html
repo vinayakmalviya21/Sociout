@@ -78,8 +78,13 @@
 
                 <input type="password" name="psw" class="password mt-3 p-2" id="psw" placeholder="Password" required>
 
+                <!-- An element to toggle between password visibility  -->
+                <input type="checkbox" onclick="myFunction()" class="mt-3">Show Password
+
+                <div>
                 <button type="button" id="login" name="login" class="registerbtn btn mt-3"
                     style="border:solid 2px blue; background-color:rgb(228 222 228 / 85%);">Login</button>
+                </div>
             </div>
 
             <div class="signin mt-2"
@@ -118,5 +123,19 @@
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./login.js" type="module"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("psw");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
 
     
